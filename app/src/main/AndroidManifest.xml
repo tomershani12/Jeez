@@ -12,15 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jeez"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SetTarget"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="true"> <!-- הפכנו את Chat לראשי -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
     </application>
+
 
 </manifest>
