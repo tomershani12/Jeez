@@ -24,7 +24,7 @@ public class Chat extends AppCompatActivity {
         findViewById(R.id.buttonSetTarget).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chat.this, SetTarget.class);
+                Intent intent = new Intent(Chat.this, SetTargetActivity.class);
                 startActivity(intent);
             }
         });
