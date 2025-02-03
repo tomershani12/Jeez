@@ -16,7 +16,12 @@
         <!-- פעילות ChatActivity מוגדרת כראשית -->
         <activity
             android:name=".Chat"
-            android:exported="true">
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -32,4 +37,8 @@
             android:exported="false" />
 
     </application>
+
+    <!-- הרשאות -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>
